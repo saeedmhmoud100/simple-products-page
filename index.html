@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<nav class="nav">
+    <div id="nav_container" class="container nav_container">
+        <img class="nav_icon" src="assets/icons/bars-solid.svg" onclick="document.getElementById('nav_container').classList.toggle('nav_show')">
+    <a class="logo"><h2>LOGO</h2></a>
+    <ul id="nav_ul" class="nav_list">
+        <li>Home</li>
+        <li>About</li>
+        <li>Login</li>
+        <li onclick="document.getElementById('cart').classList.toggle('hide')">Cart
+            <span>0</span>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<div id="cart" onclick="reRender()">
+    <h2 class="cart_header">Your Cart</h2>
+    <div>
+        <div id="cart_container" class="cart_container container">
+
+        </div>
+    </div>
+        <button class="cart_button" onclick="document.getElementById('cart').classList.toggle('hide')">Close</button>
+</div>
+
+
+<div id="products_container" class="container">
+    <div class="products_container">
+        <div class="product_card">
+            <img src="assets/images/product.png">
+            <div class="product_text">
+                <div><h3>Title</h3><span>150</span></div>
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

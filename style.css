@@ -1,0 +1,244 @@
+
+/**/
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: auto;
+
+}
+@media (min-width: 800px) {
+    .container{
+        width: 750px;
+        padding: 0 10px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1150px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .container{
+        width: 100%;
+    }
+}
+/**/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+body{
+    background-color: #eee;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav .nav_container{
+    align-items: center;
+}
+.nav .nav_container .logo{
+    font-size: 30px;
+}
+.nav_icon{
+    display: none;
+    width: 20px;
+    cursor: pointer;
+}
+/*navbar*/
+@media (max-width: 500px) {
+    .nav .nav_container{
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        height: 30px;
+        transition: height .2s linear;
+        align-items: initial;
+    }
+    .nav .nav_container .logo{
+        font-size: 1rem;
+    }
+    .nav .nav_container > ul{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav .nav_icon{
+        display: block;
+        position: absolute;
+        top: 2px;
+        right: 12px;
+    }
+    .nav .nav_show{
+        height: 190px;
+    }
+}
+
+.nav_list{
+    display: flex;
+}
+.nav_list > li{
+    margin: 0 10px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.nav_list > li:last-child{
+    position: relative;
+    margin: 0;
+}
+.nav_list > li:last-child > span{
+    position: absolute;
+    width: 15px;
+    height: 17px;
+    background-color: white;
+    font-size: 16px;
+    padding: 0px 4px;
+    right: -20px;
+}
+/*Product Card*/
+.products_container{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 3% ;
+}
+.product_card{
+    width: 30%;
+    background-color: white;
+    padding: 10px;
+}
+.product_card > img{
+    width: 100%;
+    height: 212.6px;
+}
+.product_card .product_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.product_card .product_text > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 3px;
+    flex-wrap: wrap;
+}
+.product_card .product_text div > button{
+    background: #222;
+    color: white;
+    margin: 5px 0;
+    padding: 4px;
+    cursor: pointer;
+}
+
+@media (min-width: 471px) {
+    .product_card{
+        width: 45%;
+        background-color: white;
+        padding: 10px;
+    }
+}
+@media (min-width: 650px) {
+    .product_card{
+        width: 30%;
+        background-color: white;
+        padding: 10px;
+    }
+}
+@media (min-width: 1200px) {
+    .product_card{
+        width: 20%;
+        background-color: white;
+        padding: 10px;
+    }
+}
+@media (max-width: 470px) {
+    .product_card{
+        width: 90%;
+        background-color: white;
+        padding: 10px;
+    }
+}
+    /*Product Card*/
+
+/*Cart*/
+#cart{
+    width: 100%;
+    padding: 0 0 40px 0;
+    min-height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    display: none;
+}
+
+
+#cart.hide{
+    display: initial;
+}
+.cart_header{
+    position: absolute;
+    top: 80px;
+    right: 50%;
+    transform: translateX(50%);
+
+}
+.cart_container{
+    width: 80%;
+    background-color: #eee;
+    margin-top: 45px;
+    padding: 35px;
+    justify-content: flex-start;
+    gap: 16px;
+    padding-top: 65px;
+    flex-wrap: wrap;
+}
+.cart_button{
+    position: absolute;
+    top: 5%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+@media (min-width: 470px) {
+    .cart_button{
+        top: 8%;
+    }
+
+}
+
+.quick_view_container{
+    background-color: #eee;
+    padding: 35px;
+    justify-content: center;
+    padding-top: 65px;
+    position: absolute;
+    width: 100%;
+    min_height: 100%;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    right: 0;
+    z-index: 4;
+}
