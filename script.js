@@ -1,10 +1,10 @@
 let products = [
-    {product_name:'Gold Coin',product_price:'112.55',product_image:"assets/images/product.png",added_to_cart:false},
-    {product_name:'Gold Coin',product_price:'112.55',product_image:"assets/images/labtop.png",added_to_cart:false},
-    {product_name:'Gold Coin',product_price:'112.55',product_image:"assets/images/laptops.png",added_to_cart:false},
-    {product_name:'Gold Coin',product_price:'112.55',product_image:"assets/images/mobile.png",added_to_cart:false},
-    {product_name:'Gold Coin',product_price:'112.55',product_image:"assets/images/prod1.png",added_to_cart:false},
-    {product_name:'Gold Coin',product_price:'112.55',product_image:"assets/images/product.png",added_to_cart:false}
+    {product_name:'Gold Coin1',product_price:'468',product_image:"assets/images/product.png",added_to_cart:false},
+    {product_name:'Gold Coin2',product_price:'112',product_image:"assets/images/labtop.png",added_to_cart:false},
+    {product_name:'Gold Coin3',product_price:'55',product_image:"assets/images/laptops.png",added_to_cart:false},
+    {product_name:'Gold Coin4',product_price:'115',product_image:"assets/images/mobile.png",added_to_cart:false},
+    {product_name:'Gold Coin5',product_price:'551',product_image:"assets/images/prod1.png",added_to_cart:false},
+    {product_name:'Gold Coin6',product_price:'84',product_image:"assets/images/product.png",added_to_cart:false}
 ]
 
 window.onload= _ =>{
